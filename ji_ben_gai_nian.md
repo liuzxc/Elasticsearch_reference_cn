@@ -38,15 +38,15 @@ Elasticsearch 是一个接近实时的搜索平台，这意味着文档从索引
 
 索引可以存储大量的数据，并且可以突破单个节点的硬件限制。例如，一个包涵10亿文档的索引会占据1TB的磁盘，单个节点也许无法容纳这么多的数据，也可能无法快速响应搜索请求。
 
-为了解决这个问题，Elasticsearch 提供了将索引切分成多个分片的能力。当你创建索引的时候，你可以指定数量的分片。每一个分片本身是拥有完整功能和独立的索引，可以放置在集群中的任意节点。
+为了解决这个问题，Elasticsearch 提供了将索引切分成多个分片的能力。当你创建索引的时候，你可以指定分片的数量。每一个分片本身是拥有完整功能和独立的索引，可以放置在集群中的任意节点。
 
 分片的重要性主要体现在两个方面：
-* 可以水平的切分／扩展数据集；
-* 允许跨分片的分配和并行化操作以提高性能和吞吐量；
+* 可以水平的切分／扩展数据集。
+* 允许跨分片的分配和并行化操作以提高性能和吞吐量。
 
-分片的分布和文档聚合回搜索请求的机制是完全由 Elasticsearch 管理的，对用户是透明的。
+分片的分配机制和文档聚合回搜索请求的机制是完全由 Elasticsearch 管理的，对用户是透明的。
 
-在网络／云环境下，失败是无法避免的，一旦分片／节点由于某些原因下线或消失，强烈推荐故障转移机制，为此，Elasticsearch 允许你为分片设置一份或多份拷贝，这些拷贝被称作副本分片，简称副本。
+在网络／云环境下，失败是无法避免的，一旦分片／节点因为某些原因下线或消失，强烈推荐使用故障转移机制，为此，Elasticsearch 允许你为分片设置一份或多份拷贝，这些拷贝被称作副本分片，简称副本。
 
 副本的重要性体现在两个方面：
 * 一旦分片／节点出现故障，它提供了高可用性。基于这个原因，副本分片和原始分片不在同一个节点是非常有必要的。
@@ -56,6 +56,6 @@ Elasticsearch 是一个接近实时的搜索平台，这意味着文档从索引
 
 默认情况下，Elasticsearch 中的索引会产生5个主分片和一个副本。如果你的集群有两个节点，每个索引将会有5个主分片和5个副本分片，总共10个分片。
 
-> 每个 Elasticsearch 分片都是一个 Lucene index，单个 Lucene index 有最大文档数量限制。根据[LUCENE-5843](https://issues.apache.org/jira/browse/LUCENE-5843)，限制是2,147,483,519（= Integer.MAX_VALUE - 128）。你可以使用 [_cat/shards](https://www.elastic.co/guide/en/elasticsearch/reference/current/cat-shards.html) api 监控分片数量。
+> 每个 Elasticsearch 分片都是一个 `Lucene index`，单个 `Lucene index` 有最大文档数量限制。根据[LUCENE-5843](https://issues.apache.org/jira/browse/LUCENE-5843)，限制是 2,147,483,519（= Integer.MAX_VALUE - 128）。你可以使用 [_cat/shards](https://www.elastic.co/guide/en/elasticsearch/reference/current/cat-shards.html) API 监控分片数量。
 
 现在，把上述事情放在一边，让我们开始有趣的部分...
