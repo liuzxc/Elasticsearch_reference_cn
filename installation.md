@@ -7,9 +7,9 @@ java -version
 echo $JAVA_HOME
 ```
 
-一旦 JAVA 安装完毕，就可以下载和安装 Elasticsearch。二进制文件可以从[www.elastic.co/downloads](https://www.elastic.co/downloads) 下载所有的 releases。针对每一个 release，你可以选择 zip 或 tar 存档文件，或者是 DEB，RPM package。为简单起见，我们使用 tar 文件。
+一旦 JAVA 安装完毕，就可以下载和安装 Elasticsearch。二进制文件可以从[www.elastic.co/downloads](https://www.elastic.co/downloads) 下载所有的 releases。针对每一个 release，你可以选择 `zip` 或 `tar` 存档文件，或者是 `DEB`，`RPM` package。为简单起见，我们使用 tar 文件。
 
-按照下面的命令下载 Elasticsearch 2.3.3（Windows 用户应该选择 zip package）
+按照下面的命令下载 `Elasticsearch 2.3.3`（Windows 用户应该选择 `zip` package）
 
 ```shell
 curl -L -O https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/tar/elasticsearch/2.3.3/elasticsearch-2.3.3.tar.gz
@@ -21,7 +21,7 @@ curl -L -O https://download.elastic.co/elasticsearch/release/org/elasticsearch/d
 tar -xvf elasticsearch-2.3.3.tar.gz
 ```
 
-该命令会在当前目录创建一系列的文件和文件夹，进入到 bin 目录：
+该命令会在当前目录创建一系列的文件和文件夹，进入到 `bin` 目录：
 
 ```shell
 cd elasticsearch-2.3.3/bin
@@ -50,7 +50,7 @@ cd elasticsearch-2.3.3/bin
 [2014-03-13 13:42:23,630][INFO ][node           ] [New Goblin] started
 ```
 
-没有太多的细节，可以看到叫做“New Goblin”（./elasticsearch --cluster.name my_cluster_name --node.name my_node_name在你的机器上可能有所不同）的节点被启动，并且被集群选择为主节点。不用担心主节点意味着什么，重要的是我们在集群内启动了一个节点。
+没有太多的细节，可以看到叫做 "New Goblin"（在你的机器上可能有所不同）的节点被启动，并且被集群选择为主节点。不用担心主节点意味着什么，重要的是我们在集群内启动了一个节点。
 
 正如我们之前所提到的，我们可以覆盖集群或节点的名称。可以通过以下命令实现：
 
