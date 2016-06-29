@@ -8,5 +8,5 @@
        * [集群健康度](cluster_health.md)
        * [列出所有索引](list_all_indices.md)
        * [创建索引](create_index.md)
-       * 索引和查询文档
+       * [索引和查询文档](index_and_query_a_document.md)
 
