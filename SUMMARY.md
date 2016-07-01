@@ -12,5 +12,5 @@
        * [删除索引](delete_index.md)
    * [修改您的数据](modifying_your_data.md)
        * [更新文档](updating_documents.md)
-       * 删除文档
+       * [删除文档](deleting_documents.md)
 
