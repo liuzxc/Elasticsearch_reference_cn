@@ -2,13 +2,13 @@
 
 现在删除刚刚创建的索引并列出所有的索引：
 
-```shell
+```sh
 curl -XDELETE 'localhost:9200/customer?pretty'
 curl 'localhost:9200/_cat/indices?v'
 ```
 响应：
 
-```shell
+```sh
 curl -XDELETE 'localhost:9200/customer?pretty'
 {
   "acknowledged" : true
@@ -21,7 +21,7 @@ health index pri rep docs.count docs.deleted store.size pri.store.size
 
 在继续学习之前，让我们回顾下之前学到的 API 命令：
 
-```shell
+```sh
 curl -XPUT 'localhost:9200/customer'
 curl -XPUT 'localhost:9200/customer/external/1' -d '
 {
