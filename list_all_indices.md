@@ -2,13 +2,13 @@
 
 以下命令可以列出所有的索引：
 
-```shell
+```sh
 curl 'localhost:9200/_cat/indices?v'
 ```
 
 响应：
 
-```shell
+```sh
 curl 'localhost:9200/_cat/indices?v'
 health index pri rep docs.count docs.deleted store.size pri.store.size
 ```
