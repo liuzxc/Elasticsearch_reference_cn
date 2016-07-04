@@ -2,14 +2,14 @@
 
 现在我们创建一个名叫 "customer" 的索引，并且再次列出所有的索引：
 
-```shell
+```sh
 curl -XPUT 'localhost:9200/customer?pretty'
 curl 'localhost:9200/_cat/indices?v'
 ```
 
 第一个命令使用 PUT 创建了名为 "customer" 的索引，添加 pretty 在命令的最后可以把响应以 JSON 的格式输出：
 
-```shell
+```sh
 curl -XPUT 'localhost:9200/customer?pretty'
 {
   "acknowledged" : true
