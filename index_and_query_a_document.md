@@ -25,7 +25,6 @@ curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '
   "created" : true
 }
 ```
-
 从上面可以看出，我们已经成功的在 customer 索引和 external 类型中创建了 customer 文档，并且在索引的时候指定了一个内部 ID: 1。
 
 值得注意的是，在索引文档的时候，Elasticsearch 并不要求你显示的创建一个索引。在上面的例子中，如果没有提前创建索引，Elasticsearch 将会自动创建一个名叫 customer 的索引。
