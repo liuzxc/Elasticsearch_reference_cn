@@ -15,5 +15,5 @@
        * [删除文档](deleting_documents.md)
        * [批量操作](batch_processing.md)
    * [探索您的数据](exploring_your_data.md)
-       * 搜索 API
+       * [搜索 API](the_search_api.md)
 
