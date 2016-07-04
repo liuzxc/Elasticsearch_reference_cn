@@ -3,7 +3,7 @@
 
 让我们索引一个简单的 customer 文档到 customer 索引，类型是 external，ID 是1:
 
-```shell
+```sh
 curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '
 {
   "name": "John Doe"
@@ -12,7 +12,7 @@ curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '
 
 响应：
 
-```shell
+```sh
 curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '
 {
   "name": "John Doe"
@@ -32,12 +32,12 @@ curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '
 
 获取刚才创建的文档：
 
-```shell
+```sh
 curl -XGET 'localhost:9200/customer/external/1?pretty'
 ```
 响应：
 
-```shell
+```sh
 curl -XGET 'localhost:9200/customer/external/1?pretty'
 {
   "_index" : "customer",
