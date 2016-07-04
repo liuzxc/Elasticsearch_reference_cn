@@ -2,7 +2,7 @@
 
 Elasticsearch 要求 Java 版本至少是 Java 7。在撰写本文时，推荐使用 Oracle JDK version 1.8.0_73。Java 安装因平台不同而有所不同，所以我们不会深入这些细节。Oracle 推荐的安装文档可以在 [Oracle’s website](http://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html) 找到。在安装 Elasticsearch 之前，请首先检查 Java 版本：
 
-```shell
+```sh
 java -version
 echo $JAVA_HOME
 ```
@@ -11,25 +11,25 @@ echo $JAVA_HOME
 
 按照下面的命令下载 `Elasticsearch 2.3.3`（Windows 用户应该选择 `zip` package）
 
-```shell
+```sh
 curl -L -O https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/tar/elasticsearch/2.3.3/elasticsearch-2.3.3.tar.gz
 ```
 
 然后解压：
 
-```shell
+```sh
 tar -xvf elasticsearch-2.3.3.tar.gz
 ```
 
 该命令会在当前目录创建一系列的文件和文件夹，进入到 `bin` 目录：
 
-```shell
+```sh
 cd elasticsearch-2.3.3/bin
 ```
 
 然后启动节点和单个集群：
 
-```shell
+```sh
 ./elasticsearch
 ```
 
@@ -54,7 +54,7 @@ cd elasticsearch-2.3.3/bin
 
 正如我们之前所提到的，我们可以覆盖集群或节点的名称。可以通过以下命令实现：
 
-```shell
+```sh
 ./elasticsearch --cluster.name my_cluster_name --node.name my_node_name
 ```
 
