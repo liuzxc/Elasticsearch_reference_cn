@@ -3,7 +3,7 @@
 
 这个例子会展示如何更新之前的文档（ID为1）的 name 字段为 "Jane Doe"：
 
-```shell
+```sh
 curl -XPOST 'localhost:9200/customer/external/1/_update?pretty' -d '
 {
   "doc": { "name": "Jane Doe" }
@@ -12,7 +12,7 @@ curl -XPOST 'localhost:9200/customer/external/1/_update?pretty' -d '
 
 接着下面这个例子会展示如何把之前的文档（ID为1）的`name` 字段修改为 "Jane Doe" 并且再添加一个`age`字段：
 
-```shell
+```sh
 curl -XPOST 'localhost:9200/customer/external/1/_update?pretty' -d '
 {
   "doc": { "name": "Jane Doe", "age": 20 }
@@ -21,7 +21,7 @@ curl -XPOST 'localhost:9200/customer/external/1/_update?pretty' -d '
 
 文档更新也可以通过简单的脚本来实现。主要注意的是，像下面这种动态脚本（dynamic scripts）在`1.4.3`这个版本中是默认关闭的，从这个地方[scripting docs](https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-scripting.html)可以了解更多细节。下面的例子使用脚本给年龄值加 5:
 
-```shell
+```sh
 curl -XPOST 'localhost:9200/customer/external/1/_update?pretty' -d '
 {
   "script" : "ctx._source.age += 5"
