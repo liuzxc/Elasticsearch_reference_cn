@@ -20,9 +20,17 @@
 ```
 我是通过网站[www.json-generator.com/](http://www.json-generator.com/)生成这些数据的，所以请忽略这些数据的实际意义，它们都是随机生成的。
 
+### 装载数据
 你可以从[这里](https://github.com/bly2k/files/blob/master/accounts.zip?raw=true)下载样本数据（accounts.json），解压文件到当前目录并按照以下命令把数据装载到集群：
 
 ```shell
 curl -XPOST 'localhost:9200/bank/account/_bulk?pretty' --data-binary "@accounts.json"
 curl 'localhost:9200/_cat/indices?v'
 ```
+响应：
+```shell
+curl 'localhost:9200/_cat/indices?v'
+health index pri rep docs.count docs.deleted store.size pri.store.size
+yellow bank    5   1       1000            0    424.4kb        424.4kb
+```
+上面的响应意味着我们刚刚成功的批量索引了1000个文档到`bank`索引（在`account type`下）。
