@@ -17,5 +17,5 @@
    * [探索您的数据](exploring_your_data.md)
        * [搜索 API](the_search_api.md)
        * [查询语言（query language）介绍](introducing_query_language.md)
-       * 执行搜索
+       * [执行搜索](executing_searches.md)
 
