@@ -2,8 +2,7 @@
     "plugins": [
         "disqus",
         "github",
-        "github-buttons",
-        "theme-digdocs"
+        "github-buttons"
     ],
     "pluginsConfig": {
         "disqus": {
@@ -18,10 +17,6 @@
                 "star",
                 "watch"
             ]
-        },
-        "theme-digdocs": {
-            "styles": "",
-            "showLevel": ""
         }
     }
 }
