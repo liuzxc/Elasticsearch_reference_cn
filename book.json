@@ -20,6 +20,8 @@
             ]
         },
         "theme-digdocs": {
+            "styles": "",
+            "showLevel": ""
         }
     }
 }
