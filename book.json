@@ -2,7 +2,8 @@
     "plugins": [
         "disqus",
         "github",
-        "github-buttons"
+        "github-buttons",
+        "theme-digdocs"
     ],
     "pluginsConfig": {
         "disqus": {
@@ -13,7 +14,10 @@
         },
         "github-buttons": {
             "repo": "liuzxc/Elasticsearch_reference_cn",
-            "types": ["star", "watch"]
+            "types": [
+                "star",
+                "watch"
+            ]
         }
     }
 }
