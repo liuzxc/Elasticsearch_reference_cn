@@ -18,6 +18,10 @@
                 "star",
                 "watch"
             ]
+        },
+        "theme-digdocs": {
+            "styles": "styles",
+            "showLevel": "showLevel"
         }
     }
 }
