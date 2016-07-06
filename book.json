@@ -10,6 +10,13 @@
         },
         "github": {
             "url": "https://github.com/liuzxc/Elasticsearch_reference_cn.git"
+        },
+        "github-buttons": {
+            "repo": "liuzxc/Elasticsearch_reference_cn",
+            "types": [
+                 "star",
+                 "watch"
+            ]
         }
     }
 }
