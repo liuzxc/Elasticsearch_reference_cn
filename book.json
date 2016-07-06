@@ -13,10 +13,7 @@
         },
         "github-buttons": {
             "repo": "liuzxc/Elasticsearch_reference_cn",
-            "types": [
-                 "star",
-                 "watch"
-            ]
+            "types": ["star", "watch"]
         }
     }
 }
