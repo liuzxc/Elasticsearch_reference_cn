@@ -6,6 +6,9 @@
     "pluginsConfig": {
         "disqus": {
             "shortName": "liuzxc"
+        },
+        "github": {
+            "url": "https://github.com/liuzxc/Elasticsearch_reference_cn.git"
         }
     }
 }
