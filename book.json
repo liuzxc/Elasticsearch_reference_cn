@@ -1,7 +1,8 @@
 {
     "plugins": [
         "disqus",
-        "github"
+        "github",
+        "github-buttons"
     ],
     "pluginsConfig": {
         "disqus": {
