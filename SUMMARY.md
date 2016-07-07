@@ -18,4 +18,7 @@
        * [搜索 API](the_search_api.md)
        * [查询语言介绍](introducing_query_language.md)
        * [执行搜索](executing_searches.md)
+       * [执行过滤器](executing_filters.md)
+       * [执行聚合](executing_aggregations.md)
+   * [小结](conclusion.md)
 
