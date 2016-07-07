@@ -2,7 +2,7 @@
 
 * [简介](README.md)
 * [入门指南](getting_started.md)
-   * [基本概念](ji_ben_gai_nian.md)
+   * [基本概念](basic_concepts.md)
    * [安装](installation.md)
    * [探索集群](exploring_your_cluster.md)
        * [集群健康度](cluster_health.md)
