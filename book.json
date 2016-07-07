@@ -2,7 +2,9 @@
     "plugins": [
         "disqus",
         "github",
-        "github-buttons"
+        "github-buttons",
+        "multipart",
+        "toggle-chapters"
     ],
     "pluginsConfig": {
         "disqus": {
