@@ -21,4 +21,5 @@
        * [执行过滤器](executing_filters.md)
        * [执行聚合](executing_aggregations.md)
    * [小结](conclusion.md)
+* [设置](setup.md)
 
